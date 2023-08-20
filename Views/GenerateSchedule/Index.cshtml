@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Schedule Generation Page</h2>
+@using (Html.BeginForm("GenerateSchedule", "GenerateSchedule", FormMethod.Post, new { id = "generateForm" }))
+{
+    <button type="submit" id="GenerateSchedule">Generate</button>
+}
+

@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">UCTG</h1>
+        <p class="lead">University Course Timetabling Generator (UCTG) is a Website to process the available resources into a schedule, by following one of most popular Metaheuristic Optimizations method which is Genetic Algorithm to find the fitest schedule possible.</p>
+    </section>
+
+    <div class="row">
+        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
+            <h2 id="gettingStartedTitle">Getting started</h2>
+            <p>
+                To Generate a schedule, go to the Calculate Schedule Tab, and click the generate button.
+            </p>
+            @using (Html.BeginForm("Index", "GenerateSchedule", FormMethod.Post, new { id = "generateForm" }))
+            {
+                <button type="submit" id="GenerateSchedule">Go to Schedule Generation Page</button>
+            }
+        </section>
+    </div>
+</main>

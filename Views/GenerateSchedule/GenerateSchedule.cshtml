@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "GenerateSchedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GenerateSchedule</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            No.
+        </th>
+        <th>
+            Course Name
+        </th>
+        <th>
+            Lecturer
+        </th>
+        <th>
+            Session
+        </th>
+        <th>
+            Room
+        </th>
+        <th>
+            Room Capacity
+        </th>
+    </tr>
+
+@foreach (UCTP_GA.BusinessLayer.Class item in (List<UCTP_GA.BusinessLayer.Class>)ViewBag.classes) {
+    <tr>
+        <td>
+            @item.class_id
+        </td>
+        <td>
+            @item.course.course_name
+        </td>
+        <td>
+            @item.lecturer.lecturer_name
+        </td>
+        <td>
+            @item.time.session
+        </td>
+        <td>
+            @item.room.room_id
+        </td>
+        <td>
+            @item.room.capacity
+        </td>
+    </tr>
+}
+
+</table>

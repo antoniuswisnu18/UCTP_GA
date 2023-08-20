@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b421eb83cfbe4f4a8a7a482748d7f069" Name="Diagram1" ZoomLevel="47">
+        <EntityTypeShape EntityType="UCTPModel.Class" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="UCTPModel.Cours" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="UCTPModel.Lecturer" Width="1.5" PointX="3" PointY="9.625" />
+        <EntityTypeShape EntityType="UCTPModel.Population" Width="1.5" PointX="7.5" PointY="1.5" />
+        <EntityTypeShape EntityType="UCTPModel.Room" Width="1.5" PointX="3" PointY="4.875" />
+        <EntityTypeShape EntityType="UCTPModel.Schedule" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="UCTPModel.Subject" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="UCTPModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="UCTPModel.Time" Width="1.5" PointX="3" PointY="7.25" />
+        <AssociationConnector Association="UCTPModel.FK_Classes_Courses" />
+        <AssociationConnector Association="UCTPModel.FK_Classes_Subjects" />
+        <AssociationConnector Association="UCTPModel.FK_Schedules_Classes" />
+        <AssociationConnector Association="UCTPModel.FK_Schedules_Lecturers" />
+        <AssociationConnector Association="UCTPModel.FK_Populations_Schedules" />
+        <AssociationConnector Association="UCTPModel.FK_Schedules_Rooms" />
+        <AssociationConnector Association="UCTPModel.FK_Schedules_Times" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
